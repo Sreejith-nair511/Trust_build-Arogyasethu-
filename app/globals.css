@@ -1,0 +1,65 @@
+
+/* stylelint-disable-next-line unknownAtRules */
+@tailwind base;
+/* stylelint-disable-next-line unknownAtRules */
+@tailwind components;
+/* stylelint-disable-next-line unknownAtRules */
+@tailwind utilities;
+
+:root {
+  --color-primary: #28a745;
+  --color-secondary: #90e0ef;
+  --color-accent: #20c997;
+
+  --foreground-rgb: 30, 32, 34;
+  --background-start-rgb: 75, 0, 130;
+  --background-mid-rgb: 138, 43, 226;
+  --background-end-rgb: 230, 230, 250;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+/* Smooth transitions for mode changes */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Improved touch targets for mobile */
+button,
+a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Optimize for mobile scrolling */
+html {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(var(--background-start-rgb)) 0%, rgb(var(--background-mid-rgb)) 60%, rgb(var(--background-end-rgb)) 100%);
+}
+
+body {
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+  overscroll-behavior-y: none;
+}
+
+/* Improved focus states for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Loading animation for the Ashoka Chakra-inspired trust wheel */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trust-wheel {
+  animation: spin 2s linear infinite;
+}
