@@ -77,7 +77,7 @@ export default function Home() {
           transition={{ delay: 0.5 }}
           className="text-2xl font-bold text-[#1E2022]"
         >
-          अग्निसेतु 🔥
+          अग्निसेतु 
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -223,9 +223,8 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-8 text-center">Related Projects</h2>
           <div className="flex flex-col gap-4">
             {[
-              { name: "SAP FraudVault", url: "https://sap-fraudvault.vercel.app" },
-              { name: "SAP Fingerpoint", url: "https://sap-fingerpont.vercel.app/" },
-              { name: "TrustForge Protocol", url: "https://trustforge-protocol.vercel.app/" },
+              { name: " FraudVault", url: "https://sap-fraudvault.vercel.app" },
+              { name: "Fingerpoint", url: "https://sap-fingerpont.vercel.app/" },
             ].map((link, index) => (
               <motion.a
                 key={index}
@@ -247,7 +246,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="w-full py-8 text-center">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
-          <p className="text-[#1E2022]">Made by kdebugger 🛡️</p>
+          <p className="text-[#1E2022]">Made by final commit 🛡️</p>
         </motion.div>
       </footer>
     </main>
